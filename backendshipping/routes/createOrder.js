@@ -5,7 +5,7 @@ const { router } = require('../app');
 const { db } = require('../config/db');
 const authMiddleware = require('../middleware/auth');
 const supabase = require('../config/supabase');
-const axios = require('axios')
+
 
 
 router.post('/create/pickup_location', async (req, res) => {

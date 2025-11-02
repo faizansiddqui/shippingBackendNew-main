@@ -191,7 +191,7 @@ router.get("/auth/google/callback", passport.authenticate("google", {
 router.post("/logout", (req, res) => {
   res.clearCookie("sb_access_token", cookieOption);
   res.clearCookie("sb_refresh_token", cookieOption);
-  res.json({ message: "Logged out" });
+  res.status(200).json({ message: "Logged out" });
 });
 
 // Home Routes >>>
